@@ -183,33 +183,33 @@ body.presenting .fab-edit:hover, body.presenting .fab-edit:focus { opacity: 1; }
 
 /* ---------- ŞABLON: MODERN ---------- */
 #site.tpl-modern { --font-head: Montserrat, sans-serif; --radius: 14px; }
-.tpl-modern .s-hero { min-height: 80vh; }
-.tpl-modern .s-hero-media { left: 52%; border-radius: 0 0 0 40px; }
-.tpl-modern .s-hero-media.has-photo::after { display: none; }
-.tpl-modern .s-hero-text { max-width: 52%; }
-.tpl-modern .s-hero h1 { font-weight: 800; letter-spacing: -.02em; }
-.tpl-modern .s-btn { border-radius: 999px; }
-.tpl-modern .s-card { background: var(--surface); border: 0; box-shadow: 0 10px 30px rgba(0,0,0,.08); }
-.tpl-modern .s-alt .s-card { background: var(--bg); }
-.tpl-modern .s-eyebrow { letter-spacing: .08em; }
+#site.tpl-modern .s-hero { min-height: 80vh; }
+#site.tpl-modern .s-hero-media { left: 52%; border-radius: 0 0 0 40px; }
+#site.tpl-modern .s-hero-media.has-photo::after { display: none; }
+#site.tpl-modern .s-hero-text { max-width: 52%; }
+#site.tpl-modern .s-hero h1 { font-weight: 800; letter-spacing: -.02em; }
+#site.tpl-modern .s-btn { border-radius: 999px; }
+#site.tpl-modern .s-card { background: var(--surface); border: 0; box-shadow: 0 10px 30px rgba(0,0,0,.08); }
+#site.tpl-modern .s-alt .s-card { background: var(--bg); }
+#site.tpl-modern .s-eyebrow { letter-spacing: .08em; }
 
 /* ---------- ŞABLON: LÜKS ---------- */
 #site.tpl-lux { --font-head: "Cormorant Garamond", serif; --radius: 0; }
-.tpl-lux .s-hero { justify-content: center; text-align: center; }
-.tpl-lux .s-hero-text { max-width: 900px; }
-.tpl-lux .s-hero h1 { font-weight: 400; font-size: clamp(46px, 9vw, 110px); letter-spacing: .02em; }
-.tpl-lux .s-hero-cta { justify-content: center; }
-.tpl-lux .s-hero-text::before, .tpl-lux .s-hero-text::after {
+#site.tpl-lux .s-hero { justify-content: center; text-align: center; }
+#site.tpl-lux .s-hero-text { max-width: 900px; }
+#site.tpl-lux .s-hero h1 { font-weight: 400; font-size: clamp(46px, 9vw, 110px); letter-spacing: .02em; }
+#site.tpl-lux .s-hero-cta { justify-content: center; }
+#site.tpl-lux .s-hero-text::before, #site.tpl-lux .s-hero-text::after {
   content: ""; display: block; width: 80px; height: 1px; background: var(--accent); margin: 0 auto 28px;
 }
-.tpl-lux .s-hero-text::after { margin: 36px auto 0; }
-.tpl-lux .s-hero-media.has-photo::after { background: color-mix(in srgb, var(--bg) 65%, transparent); }
-.tpl-lux .s-btn { text-transform: uppercase; letter-spacing: .15em; font-size: 13px; font-weight: 500; }
-.tpl-lux .s-section > h2, .tpl-lux .s-section > .s-eyebrow { text-align: center; }
-.tpl-lux .s-section > h2 { font-weight: 400; }
-.tpl-lux .s-card { border: 0; border-top: 1px solid var(--accent); background: none; text-align: center; }
-.tpl-lux .s-card h3 { font-weight: 600; font-size: 24px; }
-.tpl-lux .s-logo { font-weight: 600; letter-spacing: .08em; text-transform: uppercase; font-size: 20px; }
+#site.tpl-lux .s-hero-text::after { margin: 36px auto 0; }
+#site.tpl-lux .s-hero-media.has-photo::after { background: color-mix(in srgb, var(--bg) 65%, transparent); }
+#site.tpl-lux .s-btn { text-transform: uppercase; letter-spacing: .15em; font-size: 13px; font-weight: 500; }
+#site.tpl-lux .s-section > h2, #site.tpl-lux .s-section > .s-eyebrow { text-align: center; }
+#site.tpl-lux .s-section > h2 { font-weight: 400; }
+#site.tpl-lux .s-card { border: 0; border-top: 1px solid var(--accent); background: none; text-align: center; }
+#site.tpl-lux .s-card h3 { font-weight: 600; font-size: 24px; }
+#site.tpl-lux .s-logo { font-weight: 600; letter-spacing: .08em; text-transform: uppercase; font-size: 20px; }
 
 /* ================= MOBİL ================= */
 @media (max-width: 860px) {
@@ -230,9 +230,9 @@ body.presenting .fab-edit:hover, body.presenting .fab-edit:focus { opacity: 1; }
   .s-logo { font-size: 18px; }
   .s-section { padding: 64px 16px; }
   .s-hero-text { padding: 0 16px; }
-  .tpl-modern .s-hero { flex-direction: column; align-items: stretch; }
-  .tpl-modern .s-hero-media { position: relative; left: 0; height: 38vh; border-radius: 0 0 28px 28px; }
-  .tpl-modern .s-hero-text { max-width: none; padding: 32px 16px; }
+  #site.tpl-modern .s-hero { flex-direction: column; align-items: stretch; }
+  #site.tpl-modern .s-hero-media { position: relative; left: 0; height: 38vh; border-radius: 0 0 28px 28px; }
+  #site.tpl-modern .s-hero-text { max-width: none; padding: 32px 16px; }
   .s-about, .s-contact { grid-template-columns: 1fr; }
   .s-gallery { grid-template-columns: repeat(2, 1fr); }
 }
