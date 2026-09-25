@@ -335,7 +335,14 @@
   });
 
   $("#resetBtn").addEventListener("click", function () {
-    if (!confirm("Tüm ayarlar sıfırlansın mı?")) return;
+    // confirm() bazı ortamlarda engelli: iki tıkla onay
+    var btn = this;
+    if (!btn.dataset.armed) {
+      btn.dataset.armed = "1"; btn.textContent = "Emin misiniz?";
+      setTimeout(function () { delete btn.dataset.armed; btn.textContent = "Sıfırla"; }, 3000);
+      return;
+    }
+    delete btn.dataset.armed; btn.textContent = "Sıfırla";
     state = Object.assign({}, DEFAULTS);
     photos.forEach(URL.revokeObjectURL); photos = [];
     $("#photos").value = "";
